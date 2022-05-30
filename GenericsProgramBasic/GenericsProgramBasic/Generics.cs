@@ -99,6 +99,23 @@ namespace GenericsProgramBasic
                 return c;
             }
         }
+        public string findMaximumString(string first, string second, string third)
+        {
+            if (first.CompareTo(second) > 0 && first.CompareTo(third) > 0 ||
+                first.CompareTo(second) >= 0 && first.CompareTo(third) > 0 ||
+                first.CompareTo(second) > 0 && first.CompareTo(third) >= 0)
+            {
+                return first;
+            }
+            else if (second.CompareTo(first) > 0 && second.CompareTo(third) > 0 ||
+                second.CompareTo(first) >= 0 && second.CompareTo(third) > 0 ||
+                second.CompareTo(first) > 0 && second.CompareTo(third) >= 0)
+            {
+                return second;
+            }
+            else
+                return third;
+        }
     }
 
 

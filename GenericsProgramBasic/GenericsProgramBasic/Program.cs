@@ -10,3 +10,5 @@ GenericsProgramBasic.Generics<double> floatValue2 = new GenericsProgramBasic.Gen
 Console.WriteLine("Second maximum float value " + floatValue2.FindMaximumSecondFloatNumber(27.8, 67.5, 6.7));
 GenericsProgramBasic.Generics<double> floatValue3 = new GenericsProgramBasic.Generics<double>();
 Console.WriteLine("Third maximum float value " + floatValue3.FindMaximumThirdFloatNumber(27.8, 4.5, 69.7));
+GenericsProgramBasic.Generics<string> generics = new GenericsProgramBasic.Generics<string>();
+Console.WriteLine("Maximum string is :" + generics.findMaximumString("Apple", "Peach", "Banana"));
