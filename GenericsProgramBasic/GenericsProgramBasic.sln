@@ -5,7 +5,9 @@ VisualStudioVersion = 17.2.32516.85
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GenericsProgramBasic", "GenericsProgramBasic\GenericsProgramBasic.csproj", "{5184155C-B086-4DB2-82BB-7F8F3B6529CC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestingGenericsProgramBasic", "TestingGenericsProgramBasic\TestingGenericsProgramBasic.csproj", "{E7C9CBFF-09A1-4044-AFE9-BD6F060731CE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestingGenericsProgramBasic", "TestingGenericsProgramBasic\TestingGenericsProgramBasic.csproj", "{E7C9CBFF-09A1-4044-AFE9-BD6F060731CE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestForFloat", "UnitTestForFloat\UnitTestForFloat.csproj", "{5D0D7F56-0C6B-4017-BE54-AF9F47F5820E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{E7C9CBFF-09A1-4044-AFE9-BD6F060731CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E7C9CBFF-09A1-4044-AFE9-BD6F060731CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E7C9CBFF-09A1-4044-AFE9-BD6F060731CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D0D7F56-0C6B-4017-BE54-AF9F47F5820E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D0D7F56-0C6B-4017-BE54-AF9F47F5820E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D0D7F56-0C6B-4017-BE54-AF9F47F5820E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D0D7F56-0C6B-4017-BE54-AF9F47F5820E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

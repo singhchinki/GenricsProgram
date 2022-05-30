@@ -30,7 +30,26 @@ namespace TestingGenericsProgramBasic
             Assert.AreEqual(c, actualResult);
 
         }
-      
-
+        public void FindMaximumFirstFloatNumber()
+        {
+            double a = 7.8, b = 3.4, c = 4.5;
+            GenericsProgramBasic.Generics<double> value = new GenericsProgramBasic.Generics<double>();
+            var actualResult = value.FindMaximumFirstFloatNumber(a, b, c);
+            Assert.AreEqual(a, actualResult);
+        }
+        public void FindMaximumSecondFloatNumber()
+        {
+            double a = 7.8, b = 9.4, c = 4.5;
+            GenericsProgramBasic.Generics<double> value = new GenericsProgramBasic.Generics<double>();
+            var actualResult = value.FindMaximumFirstFloatNumber(a, b, c);
+            Assert.AreEqual(b, actualResult);
+        }
+        public void FindMaximumThirdFloatNumber()
+        {
+            double a = 7.8, b = 3.4, c = 9.5;
+            GenericsProgramBasic.Generics<double> value = new GenericsProgramBasic.Generics<double>();
+            var actualResult = value.FindMaximumFirstFloatNumber(a, b, c);
+            Assert.AreEqual(c, actualResult);
+        }
     }
 }

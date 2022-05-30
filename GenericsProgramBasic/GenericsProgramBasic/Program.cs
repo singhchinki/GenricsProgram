@@ -1,6 +1,12 @@
-﻿GenericsProgramBasic.Generics<int> value = new GenericsProgramBasic.Generics<int>();
-Console.WriteLine(value.MaximumOfIntegers(4, 3, 2));
+﻿GenericsProgramBasic.Generics<int> value1 = new GenericsProgramBasic.Generics<int>();
+Console.WriteLine("First maximum integer value " + value1.MaximumOfIntegers(4, 3, 2));
 GenericsProgramBasic.Generics<int> value2 = new GenericsProgramBasic.Generics<int>();
-Console.WriteLine(value2.GivenMaxSecondPosition_CheckMaxNum_ReturnMax( 5, 6, 4));
+Console.WriteLine("Second maximum integer value " +value2.GivenMaxSecondPosition_CheckMaxNum_ReturnMax( 5, 6, 4));
 GenericsProgramBasic.Generics<int> value3 = new GenericsProgramBasic.Generics<int>();
-Console.WriteLine(value3.GivenMaxThirdPosition_CheckMaxNum_ReturnMax(4, 3, 4));
+Console.WriteLine("Third maximum integer value " + value3.GivenMaxThirdPosition_CheckMaxNum_ReturnMax(4, 3, 4));
+GenericsProgramBasic.Generics<double> floatValue1 = new GenericsProgramBasic.Generics<double>();
+Console.WriteLine("First maximum float value " + floatValue1.FindMaximumFirstFloatNumber(27.8, 4.5, 6.7));
+GenericsProgramBasic.Generics<double> floatValue2 = new GenericsProgramBasic.Generics<double>();
+Console.WriteLine("Second maximum float value " + floatValue2.FindMaximumSecondFloatNumber(27.8, 67.5, 6.7));
+GenericsProgramBasic.Generics<double> floatValue3 = new GenericsProgramBasic.Generics<double>();
+Console.WriteLine("Third maximum float value " + floatValue3.FindMaximumThirdFloatNumber(27.8, 4.5, 69.7));

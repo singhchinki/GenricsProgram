@@ -41,7 +41,6 @@ namespace GenericsProgramBasic
         }
         public int GivenMaxThirdPosition_CheckMaxNum_ReturnMax(int a, int b, int c)
         {
-            {
                 if (a > b && a > c)
                 {
                     return a;
@@ -54,9 +53,8 @@ namespace GenericsProgramBasic
                 {
                     return c;
                 }
-            }
         }
-        public int MaximumOf_First_Float(int a, int b, int c)
+        public double FindMaximumFirstFloatNumber( double a, double b, double c)
         {
             if (a > b && a > c)
             {
@@ -71,8 +69,7 @@ namespace GenericsProgramBasic
                 return c;
             }
         }
-
-        public int MaxSecondPosition_ForFloat(int a, int b, int c)
+        public double FindMaximumSecondFloatNumber(double a, double b, double c)
         {
             if (a > b && a > c)
             {
@@ -87,23 +84,22 @@ namespace GenericsProgramBasic
                 return c;
             }
         }
-        public int MaxThirdPosition_ForFloat(int a, int b, int c)
+        public double FindMaximumThirdFloatNumber(double a, double b, double c)
         {
+            if (a > b && a > c)
             {
-                if (a > b && a > c)
-                {
-                    return a;
-                }
-                else if (b > a && b > c)
-                {
-                    return b;
-                }
-                else
-                {
-                    return c;
-                }
+                return a;
+            }
+            else if (b > a && b > c)
+            {
+                return b;
+            }
+            else
+            {
+                return c;
             }
         }
     }
+
 
 }
