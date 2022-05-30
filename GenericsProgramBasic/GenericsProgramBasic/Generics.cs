@@ -8,98 +8,15 @@ namespace GenericsProgramBasic
 {
     public class Generics<T> where T : IComparable
     {
-       public int MaximumOfIntegers(int a, int b, int c)
-       {
-            if (a > b && a > c)
-            {
-                return a;
-            }
-            else if(b > a && b > c)
-            { 
-                return b;
-            }
-            else
-            {
-                return c;
-            }
-       }     
-        
-        public int GivenMaxSecondPosition_CheckMaxNum_ReturnMax( int a, int b, int c)
+      
+        public T first, second, third;
+        public Generics(T first, T second, T third)
         {
-            if (a > b && a > c)
-            {
-                return a;
-            }
-            else if (b > a && b > c)
-            {
-                return b;
-            }
-            else
-            {
-                return c;
-            }
+            this.first = first;
+            this.second = second;
+            this.third = third;
         }
-        public int GivenMaxThirdPosition_CheckMaxNum_ReturnMax(int a, int b, int c)
-        {
-                if (a > b && a > c)
-                {
-                    return a;
-                }
-                else if (b > a && b > c)
-                {
-                    return b;
-                }
-                else
-                {
-                    return c;
-                }
-        }
-        public double FindMaximumFirstFloatNumber( double a, double b, double c)
-        {
-            if (a > b && a > c)
-            {
-                return a;
-            }
-            else if (b > a && b > c)
-            {
-                return b;
-            }
-            else
-            {
-                return c;
-            }
-        }
-        public double FindMaximumSecondFloatNumber(double a, double b, double c)
-        {
-            if (a > b && a > c)
-            {
-                return a;
-            }
-            else if (b > a && b > c)
-            {
-                return b;
-            }
-            else
-            {
-                return c;
-            }
-        }
-        public double FindMaximumThirdFloatNumber(double a, double b, double c)
-        {
-            if (a > b && a > c)
-            {
-                return a;
-            }
-            else if (b > a && b > c)
-            {
-                return b;
-            }
-            else
-            {
-                return c;
-            }
-        }
-        public string findMaximumString(string first, string second, string third)
+        public static T findMaximum(T first, T second, T third)
         {
             if (first.CompareTo(second) > 0 && first.CompareTo(third) > 0 ||
                 first.CompareTo(second) >= 0 && first.CompareTo(third) > 0 ||
@@ -116,24 +33,13 @@ namespace GenericsProgramBasic
             else
                 return third;
         }
-        public T findMaximum<T>(T first, T second, T third) where T : IComparable
+        public T showMax()
         {
-            if (first.CompareTo(second) > 0 && first.CompareTo(third) > 0 ||
-                first.CompareTo(second) >= 0 && first.CompareTo(third) > 0 ||
-                first.CompareTo(second) > 0 && first.CompareTo(third) >= 0)
-            {
-                return first;
-            }
-            else if (second.CompareTo(first) > 0 && second.CompareTo(third) > 0 ||
-                second.CompareTo(first) >= 0 && second.CompareTo(third) > 0 ||
-                second.CompareTo(first) > 0 && second.CompareTo(third) >= 0)
-            {
-                return second;
-            }
-            else
-                return third;
+            T Result = Generics<T>.findMaximum(this.first, this.second, this.third);
+            return Result;
         }
     }
-
-
 }
+
+
+

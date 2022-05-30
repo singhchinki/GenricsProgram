@@ -2,54 +2,30 @@ namespace TestingGenericsProgramBasic
 {
     public class Tests
     {
-        [Test]
-        public void GivenMaxFirstPosition_CheckMaxNum_ReturnMaxInFirstPosition()
-        {
-            int a = 5, b = 4, c = 3;
-            GenericsProgramBasic.Generics<int> value = new GenericsProgramBasic.Generics<int>();
-            var actualResult = value.MaximumOfIntegers(a, b, c);
-            Assert.AreEqual(a, actualResult);
-
-        }
 
         [Test]
-        public void GivenMaxSecondPosition_CheckMaxNum_ReturnMax()
+        public void GivenMaxInFirstPosition_TestMaximum_ReturnMaxInFirstPosition()
         {
-            int a = 4, b = 5, c = 3;
-            GenericsProgramBasic.Generics<int> value = new GenericsProgramBasic.Generics<int>();
-            var actualResult = value.MaximumOfIntegers(a, b, c);
-            Assert.AreEqual(b, actualResult);
-
+            double a = 9.5, b = 8.2, c = 7.6;
+            GenericsProgramBasic.Generics<double> maxDouble = new GenericsProgramBasic.Generics<double>(a, b, c);
+            var Result = maxDouble.showMax();
+            Assert.AreEqual(a, Result);
         }
         [Test]
-        public void GivenMaxThirdPosition_CheckMaxNum_ReturnMax()
+        public void GivenMaxInSecondPosition_TestMaximum_ReturnMaxInSecondPosition()
         {
-            int a = 3, b = 4, c = 5;
-            GenericsProgramBasic.Generics<int> value = new GenericsProgramBasic.Generics<int>();
-            var actualResult = value.MaximumOfIntegers(a, b, c);
-            Assert.AreEqual(c, actualResult);
-
+            double a = 8.1, b = 9.4, c = 7.3;
+            GenericsProgramBasic.Generics<double> maxDouble = new GenericsProgramBasic.Generics<double>(a, b, c);
+            var Result = maxDouble.showMax();
+            Assert.AreEqual(b, Result);
         }
-        public void FindMaximumFirstFloatNumber()
+        [Test]
+        public void GivenMaxInThirdPosition_TestMaximum_ReturnMaxInThirdPosition()
         {
-            double a = 7.8, b = 3.4, c = 4.5;
-            GenericsProgramBasic.Generics<double> value = new GenericsProgramBasic.Generics<double>();
-            var actualResult = value.FindMaximumFirstFloatNumber(a, b, c);
-            Assert.AreEqual(a, actualResult);
+            double a = 8.5, b = 9.2, c = 10.0;
+            GenericsProgramBasic.Generics<double> maxDouble = new GenericsProgramBasic.Generics<double> (a, b, c);
+            var Result = maxDouble.showMax();
+            Assert.AreEqual(c, Result);
         }
-        public void FindMaximumSecondFloatNumber()
-        {
-            double a = 7.8, b = 9.4, c = 4.5;
-            GenericsProgramBasic.Generics<double> value = new GenericsProgramBasic.Generics<double>();
-            var actualResult = value.FindMaximumFirstFloatNumber(a, b, c);
-            Assert.AreEqual(b, actualResult);
-        }
-        public void FindMaximumThirdFloatNumber()
-        {
-            double a = 7.8, b = 3.4, c = 9.5;
-            GenericsProgramBasic.Generics<double> value = new GenericsProgramBasic.Generics<double>();
-            var actualResult = value.FindMaximumFirstFloatNumber(a, b, c);
-            Assert.AreEqual(c, actualResult);
-        }
-    }
+    } 
 }
